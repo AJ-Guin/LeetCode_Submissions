@@ -1,0 +1,7 @@
+/* Write your T-SQL query statement below */
+select 
+    e.name as Employee
+from Employee e
+join Employee m
+on e.managerId = m.id
+WHERE e.salary > m.salary;
